@@ -18,7 +18,7 @@ def canUnlockAll(boxes):
     array2 = []
     while not len(array) == len(boxes) - 1 and array2 != array:
         array2 = array.copy()
-        for i in range(len(array2)):
+        for i in range(len(array2) - 1):
             array += boxes[array2[i]]
             array = list(set(array))
         for i in range(len(array) - 1):
