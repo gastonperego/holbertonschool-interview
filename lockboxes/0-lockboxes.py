@@ -16,7 +16,7 @@ def canUnlockAll(boxes):
         return False
     array = boxes[0]
     array2 = []
-    while not len(array) > len(boxes) - 1 and array2 != array:
+    while not len(array) == len(boxes) - 1 and array2 != array:
         array2 = array.copy()
         for i in range(len(array2)):
             array += boxes[array2[i]]
